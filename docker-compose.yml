@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_container
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: always
+
+  # fastapi:
+  #   build:
+  #     context: .  # Path to the directory containing your Dockerfile
+  #   container_name: fastapi_container
+  #   environment:
+  #     MONGO_URI: mongodb://root:root@mongodb:27017
+  #   ports:
+  #     - "8000:8000"
+  #   depends_on:
+  #     - mongodb
+  #   restart: always
+
+volumes:
+  mongo_data:
+    driver: local

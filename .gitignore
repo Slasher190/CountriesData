@@ -1,0 +1,50 @@
+# Python-related
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.egg-info/
+.eggs/
+*.venv/
+env/
+venv/
+
+*.pyenv/
+*.tox/
+*.nox/
+*.coverage
+*.coverage.*
+*.hypothesis/
+.pytest_cache/
+*.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.pylint.d/
+*.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Docker-related
+
+.dockerignore
+*.dockerignore
+docker-compose.override.yml
+
+# FastAPI
+*.json
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
