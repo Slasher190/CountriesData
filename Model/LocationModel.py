@@ -57,3 +57,6 @@ class CitiesCollection(BaseModel):
 
 class CountriesCollection(BaseModel):
     countries: List[CountryModel]
+
+class IdsModel(BaseModel):
+    ids: List[int]
