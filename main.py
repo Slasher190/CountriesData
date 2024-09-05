@@ -12,7 +12,7 @@ load_dotenv()
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Please uncomment the below code to get data upload to databse
-    # await load_data()
+    await load_data()
     yield
 
 app = FastAPI(lifespan=lifespan if USE_LIFESPAN else None)

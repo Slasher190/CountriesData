@@ -9,7 +9,7 @@ load_dotenv()
 client = motor.motor_asyncio.AsyncIOMotorClient(os.environ["MONGODB_URL"])
 
 db = client.my_data
-
+print("Database is running at: ", os.environ["MONGODB_URL"])
 countries_collection = db.get_collection("countries")
 states_collection = db.get_collection("states")
 cities_collection = db.get_collection("cities")

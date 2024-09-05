@@ -7,7 +7,7 @@ class CountryModel(BaseModel):
     iso3: Optional[str] = None
     iso2: Optional[str] = None
     numeric_code: Optional[int] = None
-    phone_code: Optional[str] = None
+    phone_code: Optional[int] = None
     capital: Optional[str] = None
     currency: Optional[str] = None
     currency_name: Optional[str] = None
