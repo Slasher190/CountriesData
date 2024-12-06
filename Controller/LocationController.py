@@ -1,7 +1,7 @@
 from Model.LocationModel import CountriesCollection, StatesCollection, CitiesCollection, CountryModel, StateModel, CityModel
 from database import countries_collection, states_collection, cities_collection
 from typing import List
-from fastapi import HTTPException
+from fastapi import HTTPException # type: ignore
 
 async def get_all_countries():
     """
